@@ -20,7 +20,7 @@ const personalMovieDB = {
 
 function rememberMyFilms(){
     for(let i = 0; i < 2; i++){
-        let answerFirst = prompt("Один из последних просмотренных фильмов?", '');
+        let answerFirst = prompt("Один из последних просмотренных фильмов?", '').trim();
         let answerSecond = prompt("На сколько оцените его?", '');
         
         if (answerFirst != null && answerSecond != null && answerFirst != '' && answerSecond != '' && answerFirst.length < 50){
@@ -63,3 +63,4 @@ function writeYourGenres(){
 }
 
 writeYourGenres();
+ 
